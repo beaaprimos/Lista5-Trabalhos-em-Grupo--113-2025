@@ -43,7 +43,7 @@ void cadastrar(Administrativo adm[]) {
         scanf("%d", &adm[i].idade);
         while (getchar() != '\n');
     }
-    printf("Cadastro concluÌdo.\n");
+    printf("Cadastro conclu√≠do.\n");
     pausar();
 }
 
@@ -89,7 +89,7 @@ void corrigir(Administrativo adm[]) {
             return;
         }
     }
-    printf("Administrativo n„o encontrado.\n");
+    printf("Administrativo n√£o encontrado.\n");
     pausar();
 }
 
@@ -111,7 +111,7 @@ void pesquisar(Administrativo adm[]) {
                 return;
             }
         }
-        printf("Nome n„o encontrado.\n");
+        printf("Nome n√£o encontrado.\n");
     } else if (op == 2) {
         int idade, achou = 0;
         printf("Digite a idade: ");
@@ -127,7 +127,7 @@ void pesquisar(Administrativo adm[]) {
             printf("Nenhum administrativo com essa idade.\n");
         }
     } else {
-        printf("OpÁ„o inv·lida.\n");
+        printf("Op√ß√£o inv√°lida.\n");
     }
     pausar();
 }
@@ -179,7 +179,7 @@ int main() {
             case 5: listarAposentados(adm); break;
             case 6: listarAtivos(adm); break;
             case 0: printf("Encerrando programa.\n"); break;
-            default: printf("OpÁ„o inv·lida.\n"); pausar();
+            default: printf("Op√ß√£o inv√°lida.\n"); pausar();
         }
     } while (op != 0);
 
